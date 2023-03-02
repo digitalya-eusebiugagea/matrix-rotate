@@ -1,7 +1,7 @@
 ### Rotate
 
 ```sh
-    node ./dist/cli.js [path-to-csv-file]
+node ./dist/cli.js [path-to-csv-file]
 ```
 
 Usage:
