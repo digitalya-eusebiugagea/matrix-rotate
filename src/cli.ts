@@ -12,9 +12,9 @@ const run = async () => {
 
         getReadableStream(file)
             .on("error", () => process.exit(1))
-            .pipe(csv.parse({ headers: ['id', 'json'] }))
+            .pipe(csv.parse({ headers: true }))
             .pipe(
-                csv.format<InputRow, OutputRow>({ headers: ['id', 'json', 'is_valid'] }),
+                csv.format<InputRow, OutputRow>({ headers: true }),
             )
             .transform(async (row, next): Promise<void> => {
                 try {
