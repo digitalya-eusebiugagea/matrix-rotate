@@ -4,30 +4,30 @@ const swap = (matrixArray: number[], posA: number, posB: number) => {
     matrixArray[posB] = aux;
 }
 
-const getArrayIndex = (n: number, row: number, column: number) => {
-    return n * row + column;
+const getArrayIndex = (dimension: number, row: number, column: number) => {
+    return dimension * row + column;
 }
 
-export const rotate = (n: number, matrixArray: number[], k: number = 0) => {
-    if (k >= Math.floor(n / 2)) return;
+export const rotate = (dimension: number, matrixArray: number[], borderDepth: number = 0) => {
+    if (borderDepth >= Math.floor(dimension / 2)) return;
 
-    for (let j = k; j < n - k - 1; j++) {
-        swap(matrixArray, getArrayIndex(n, k, j), getArrayIndex(n, k, j + 1))
+    for (let j = borderDepth; j < dimension - borderDepth - 1; j++) {
+        swap(matrixArray, getArrayIndex(dimension, borderDepth, j), getArrayIndex(dimension, borderDepth, j + 1))
     }
 
-    for (let i = k; i < n - k - 1; i++) {
-        swap(matrixArray, getArrayIndex(n, i, n - k - 1), getArrayIndex(n, i + 1, n - k - 1))
+    for (let i = borderDepth; i < dimension - borderDepth - 1; i++) {
+        swap(matrixArray, getArrayIndex(dimension, i, dimension - borderDepth - 1), getArrayIndex(dimension, i + 1, dimension - borderDepth - 1))
     }
 
-    for (let j = n - k - 1; j > k; j--) {
-        swap(matrixArray, getArrayIndex(n, n - k - 1, j), getArrayIndex(n, n - k - 1, j - 1))
+    for (let j = dimension - borderDepth - 1; j > borderDepth; j--) {
+        swap(matrixArray, getArrayIndex(dimension, dimension - borderDepth - 1, j), getArrayIndex(dimension, dimension - borderDepth - 1, j - 1))
     }
 
-    for (let i = n - k - 1; i > k + 1; i--) {
-        swap(matrixArray, getArrayIndex(n, i, k), getArrayIndex(n, i - 1, k))
+    for (let i = dimension - borderDepth - 1; i > borderDepth + 1; i--) {
+        swap(matrixArray, getArrayIndex(dimension, i, borderDepth), getArrayIndex(dimension, i - 1, borderDepth))
     }
 
-    rotate(n, matrixArray, k + 1);
+    rotate(dimension, matrixArray, borderDepth + 1);
 }
 
 export const runRotation = (matrixArray: number[]) => {
