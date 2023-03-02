@@ -1,0 +1,49 @@
+[33m[nodemon] 1.18.4[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node dist/cli.js input.csv`[39m
+id,json,is_valid
+id,[],false
+1,"[2,3,6,1,5,9,4,7,8]",true
+2,"[20,10,40,90]",true
+3,[-5],true
+9,[],false
+5,[],false
+8,[],false[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node dist/cli.js input.csv`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node dist/cli.js input.csv`[39m
+id,json,is_valid
+id,[],false
+1,"[2,3,6,1,5,9,4,7,8]",true
+2,"[20,10,40,90]",true
+3,[-5],true
+9,[],false
+5,[],false
+8,[],false[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node dist/cli.js input.csv`[39m
+id,json,is_valid
+id,[],false
+1,"[2,3,6,1,5,9,4,7,8]",true
+2,"[20,10,40,90]",true
+3,[-5],true
+9,[],false
+5,[],false
+8,[],false[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node dist/cli.js input.csv`[39m
+id,json,is_valid
+id,[],false
+1,"[2,3,6,1,5,9,4,7,8]",true
+2,"[20,10,40,90]",true
+3,[-5],true
+9,[],false
+5,[],false
+8,[],false[32m[nodemon] clean exit - waiting for changes before restart[39m
