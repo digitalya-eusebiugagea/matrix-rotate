@@ -1,4 +1,4 @@
-### Rotate
+### Rotate matrix
 
 ```sh
 node ./dist/cli.js [path-to-csv-file]
@@ -17,7 +17,7 @@ node ./dist/cli.js ./input.csv > ./output.csv
 node ./dist/cli.js https://raw.githubusercontent.com/digitalya-eusebiugagea/matrix-rotate/main/input.csv > ./output.csv
 ```
 
-Run tests:
+Tests:
 
 ```sh
 yarn run test
